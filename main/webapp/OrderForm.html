@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Order Form</title>
+<style>
+input{
+  border-style:groove;
+  border-color:black;
+}
+input[type="text"], input[type="password"], 
+label{
+ border-radius: 10px;
+ margin: auto;
+ width : 40%;
+ display: block;
+}
+input[type="radio"] {
+ margin-left: 15%;
+ width : 40%;
+ display: block;
+}
+input[type="submit"] {
+ margin: auto;
+ margin-bottom: 3%;
+ width :25%;
+ display: block;
+}
+</style>
+</head>
+<body>
+<h1>XYZ Computers: Order Form</h1>
+<form action="OrderFormServlet" method="post">
+<label>Description:</label>  <input type="text" name="Description"><br>
+<label>Code:</label>  <input type="text" name="Code"><br>
+<label>Quantity:</label> <input type="text" name="Quantity"><br><br>
+<label>Delivery:</label> 
+<br><label>Same day</label><input type="radio" name="Delivery" value="Same day">
+<br><label>Express</label><input type="radio" name="Delivery" value="Express">
+<br><label>Standard</label><input type="radio" name="Delivery" value="Standard">
+<br><label>Customer_ID:</label> <input type="password" name="Number">
+<br><p></p>
+<input type="submit" value="SUBMIT">
+<input type="submit" value="Cancel">
+</form>
+</body>
+</html>
